@@ -1,0 +1,38 @@
+{
+  "name": "markdown-notes-cli",
+  "version": "1.0.0",
+  "description": "A lightweight CLI for managing markdown notes",
+  "main": "dist/index.js",
+  "bin": {
+    "mdnotes": "dist/index.js"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint src --ext .ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "cli",
+    "markdown",
+    "notes",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "commander": "^12.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
